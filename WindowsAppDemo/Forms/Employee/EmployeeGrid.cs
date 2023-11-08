@@ -9,13 +9,14 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsAppDemo.Global;
 using WindowsAppDemo.Models;
 
 namespace WindowsAppDemo.Forms.Employee
 {
     public partial class EmployeeGrid : Form
     {
-        private const string ApiBaseUrl = "https://localhost:7038/";
+        private const string ApiBaseUrl = Common.ApiUrl;
 
         public EmployeeGrid()
         {
